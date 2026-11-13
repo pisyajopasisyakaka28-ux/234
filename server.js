@@ -52,5 +52,5 @@ const server = http.createServer((req, res) => {
   req.pipe(proxyReq);
 });
 
-const port = process.env.PORT || 80;
+const port = process.env.PORT || 8080;
 server.listen(port, () => console.log('proxy up on port ' + port));
